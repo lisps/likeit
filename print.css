@@ -1,0 +1,24 @@
+/**
+ * DokuWiki Plugin likeit
+ *
+ * @license GPL 2 (http://www.gnu.org/licenses/gpl.html)
+ * @author  lisps    
+ */
+ 
+.plugin_likeit.container:before {
+	content:"[";
+}
+.plugin_likeit.container:after {
+	content:"]";
+}
+
+.plugin_likeit.count:before {
+	content:" (";
+}
+.plugin_likeit.count:after {
+	content:")";
+}
+
+.plugin_likeit.list {
+	display:none;
+}

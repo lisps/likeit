@@ -1,0 +1,80 @@
+/**
+ * DokuWiki Plugin likeit
+ *
+ * @license GPL 2 (http://www.gnu.org/licenses/gpl.html)
+ * @author  lisps    
+ */
+
+.plugin_likeit.container {
+	display:inline-block;
+}
+
+.plugin_likeit.container.disabled .plugin_likeit.button {
+	cursor: default;
+}
+
+.plugin_likeit.button {
+	padding:1px;
+	margin:0;
+	
+	text-shadow: 0 -1px 0 #354c8c;
+    white-space: nowrap;
+    font-weight: bold;
+    
+	border: medium none;
+    border-radius: 2px;
+    color: #fff;
+	
+	cursor: pointer;
+
+	background-color:#2b73b7;
+	
+	display:inline-block;
+	font-size: 90%;
+}
+
+.plugin_likeit.image {
+	display:inline-block;
+	
+	background-image: url('images/thumbs-o-up.png');
+	background-repeat: no-repeat;
+	width: 16px; /*or your image's width*/
+	height: 13px; /*or your image's height*/
+	margin-top: 0px;
+}
+
+.plugin_likeit.count {
+
+	font-size: 90%;
+	margin-left: 3px;
+	display:inline-block;
+	padding: 0px 2px;
+	
+	background-color: #fff;
+	border: medium none;
+    border-radius: 2px;
+    color: #000;
+}
+
+.plugin_likeit.list {
+	display:none;
+	position:absolute;
+	
+	padding: 0px 2px;
+	background:#eee;
+	
+	border: 1px solid black;
+    border-radius: 2px;
+    
+    max-height:150px;
+    overflow-y:auto;
+}
+
+.plugin_likeit.list .listitem {
+	display: block;
+}
+
+.plugin_likeit.container.loading .plugin_likeit.count {
+	background-color: #DEE7EC;
+	background-image: url('loading23.gif');
+}

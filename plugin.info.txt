@@ -1,0 +1,7 @@
+base    likeit
+author  lisps
+email   
+date    2015-02-27
+name    likeit
+desc    facebook like like it button
+url     http://dokuwiki.org/plugin:likeit
