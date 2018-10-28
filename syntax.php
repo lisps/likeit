@@ -66,7 +66,7 @@ class syntax_plugin_likeit extends DokuWiki_Syntax_Plugin {
     /*
      * Handle the matches
      */
-    function handle($match, $state, $pos, &$handler){
+    function handle($match, $state, $pos, Doku_Handler $handler){
     	global $ID;
     	
     	$opts = array(
@@ -81,7 +81,7 @@ class syntax_plugin_likeit extends DokuWiki_Syntax_Plugin {
     /*
      * Create output
      */
-    function render($mode, &$renderer, $opts)
+    function render($mode, Doku_Renderer $renderer, $opts)
 	{
 		if($mode == 'metadata') return false;
 		
