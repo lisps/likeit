@@ -1,7 +1,7 @@
 base    likeit
-author  lisps
-email   
-date    2015-02-27
+author  lisps, peterfromearth
+email   coder@peterfromearth
+date    2018-10-28
 name    likeit
 desc    facebook like like it button
 url     http://dokuwiki.org/plugin:likeit

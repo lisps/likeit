@@ -20,7 +20,7 @@ class action_plugin_likeit extends DokuWiki_Action_Plugin {
 	}
 	
 	
-	function _ajax_call(&$event,$param) {
+	function _ajax_call(Doku_Event $event,$param) {
 		if ($event->data !== 'plugin_likeit') {
 			return;
 		}
@@ -39,7 +39,7 @@ class action_plugin_likeit extends DokuWiki_Action_Plugin {
 		/* @var $Hajax \helper_plugin_ajaxedit */
 		$Hajax = $this->loadHelper('ajaxedit');
 		
-		/* @var $Hfsinput \helper_plugin_flysprayinput */
+		/* @var $Hfsinput \helper_plugin_likeit */
 		$Hlikeit = $this->loadHelper('likeit');
 		
 		$likewithread = $this->getConf('likewithread')?AUTH_READ:AUTH_EDIT;
